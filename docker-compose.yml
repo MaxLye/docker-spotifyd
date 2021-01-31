@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    spotifyd:
+        build: .
+        devices:
+            - /dev/snd
+        restart: always
+        network_mode: host
